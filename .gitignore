@@ -6,7 +6,7 @@
 
 # testing
 /server/coverage
-
+/server/db.js
 # production
 /server/build
 
