@@ -1,6 +1,5 @@
-./server/node_modules
-/node_modules
-/server/node_modules
+./server/node_modules 
+./client/node_modules  
 /server/.pnp
 /server/.pnp.js
 
@@ -27,3 +26,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+**/node_modules 
