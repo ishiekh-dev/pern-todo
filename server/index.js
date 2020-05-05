@@ -56,8 +56,8 @@ app.put('/todos/:id', async(req, res) => {
 app.delete('/todos/:id', async(req, res) => {
     try {
         const { id } = req.params;
-        const updateTodo = await pool.query("UPDATE todo SET description = $1 WHERE todo_id = $2", [description, id]);
-        res.send("Todo was Updated");
+        const deleteTodo = await pool.query("DELETE FROM  todo   WHERE todo_id = $1", [id]);
+        res.send("Todo was deleted");
     } catch (err) {
         console.error(err.message)
     }
